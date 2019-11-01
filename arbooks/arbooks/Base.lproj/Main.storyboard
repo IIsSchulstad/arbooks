@@ -220,10 +220,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="JVV-Er-3Ox" id="ABd-qY-JGk"/>
-                                    <outlet property="delegate" destination="JVV-Er-3Ox" id="9e2-Et-Axh"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

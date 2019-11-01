@@ -10,12 +10,6 @@ import UIKit
 
 class BooksViewController: UIViewController {
 
-    
-    @IBOutlet weak var bookImage: UIImageView!
-    @IBOutlet weak var bookTitle: UILabel!
-    @IBOutlet weak var bookEdition: UILabel!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

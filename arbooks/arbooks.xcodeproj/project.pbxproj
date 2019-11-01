@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28C7C31A236C75B200CA4F33 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7C319236C75B200CA4F33 /* BooksViewController.swift */; };
 		976E85C3236C48EF0040AFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85C2236C48EF0040AFF9 /* AppDelegate.swift */; };
 		976E85C5236C48EF0040AFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85C4236C48EF0040AFF9 /* ViewController.swift */; };
 		976E85C8236C48EF0040AFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85C6236C48EF0040AFF9 /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28C7C319236C75B200CA4F33 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		976E85BF236C48EF0040AFF9 /* arbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976E85C2236C48EF0040AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		976E85C4236C48EF0040AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				976E85C2236C48EF0040AFF9 /* AppDelegate.swift */,
 				976E85C4236C48EF0040AFF9 /* ViewController.swift */,
 				976E85C6236C48EF0040AFF9 /* Main.storyboard */,
-				28C7C319236C75B200CA4F33 /* BooksViewController.swift */,
 				976E85C9236C48F00040AFF9 /* Assets.xcassets */,
 				976E85CB236C48F00040AFF9 /* LaunchScreen.storyboard */,
 				976E85CE236C48F00040AFF9 /* Info.plist */,
@@ -140,7 +137,6 @@
 			files = (
 				976E85C5236C48EF0040AFF9 /* ViewController.swift in Sources */,
 				976E85C3236C48EF0040AFF9 /* AppDelegate.swift in Sources */,
-				28C7C31A236C75B200CA4F33 /* BooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

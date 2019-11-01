@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cas-TV-ikS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -105,7 +105,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-1I-d4N">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-1I-d4N">
                                                     <rect key="frame" x="20" y="5" width="156" height="33"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -113,6 +113,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="GdV-1I-d4N" firstAttribute="centerY" secondItem="gDo-Vs-2Tm" secondAttribute="centerY" id="9Wl-fT-2zt"/>
                                                 <constraint firstAttribute="trailing" secondItem="GdV-1I-d4N" secondAttribute="trailing" constant="238" id="eGv-we-0hE"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -170,7 +171,7 @@
         <!--Books-->
         <scene sceneID="J4Y-pp-7nJ">
             <objects>
-                <viewController title="Books" id="JVV-Er-3Ox" customClass="BooksViewController" customModule="arbooks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Books" id="JVV-Er-3Ox" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H3w-sQ-EAy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,11 +247,6 @@
                         <viewLayoutGuide key="safeArea" id="chK-gQ-2fr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Books" id="CgL-57-Fc8"/>
-                    <connections>
-                        <outlet property="bookEdition" destination="uvL-uy-JGf" id="37o-bi-F9D"/>
-                        <outlet property="bookImage" destination="Hwp-sK-SeF" id="uPi-Ob-KA4"/>
-                        <outlet property="bookTitle" destination="4ee-Ln-pAk" id="hAo-M1-C5H"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0k8-Eo-eJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

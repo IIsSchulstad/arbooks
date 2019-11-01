@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cas-TV-ikS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="38g-7l-yda">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,18 +29,32 @@
         <!--Cam-->
         <scene sceneID="BPv-QB-vOO">
             <objects>
-                <viewController title="Cam" id="38g-7l-yda" sceneMemberID="viewController">
+                <viewController title="Cam" id="38g-7l-yda" customClass="ViewController" customModule="arbooks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i62-Z5-EUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1r4-md-eoA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </arscnView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1r4-md-eoA" firstAttribute="bottom" secondItem="eFL-DZ-y06" secondAttribute="bottom" id="2Fu-y2-M5d"/>
+                            <constraint firstItem="1r4-md-eoA" firstAttribute="leading" secondItem="eFL-DZ-y06" secondAttribute="leading" id="8T9-2u-MRg"/>
+                            <constraint firstItem="1r4-md-eoA" firstAttribute="trailing" secondItem="eFL-DZ-y06" secondAttribute="trailing" id="8eW-26-CPv"/>
+                            <constraint firstItem="1r4-md-eoA" firstAttribute="top" secondItem="i62-Z5-EUa" secondAttribute="top" id="pXA-pE-c68"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eFL-DZ-y06"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AR" id="l9s-H3-hyi"/>
+                    <connections>
+                        <outlet property="sceneView" destination="1r4-md-eoA" id="reU-Pg-Vvx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXr-ql-W1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="177"/>
+            <point key="canvasLocation" x="1394.2028985507247" y="176.78571428571428"/>
         </scene>
         <!--Books-->
         <scene sceneID="J4Y-pp-7nJ">
@@ -64,6 +78,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cas-TV-ikS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zb0-CJ-nb2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

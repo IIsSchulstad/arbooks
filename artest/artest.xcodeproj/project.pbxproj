@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		976E85C3236C48EF0040AFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85C2236C48EF0040AFF9 /* AppDelegate.swift */; };
-		976E85C5236C48EF0040AFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85C4236C48EF0040AFF9 /* ViewController.swift */; };
-		976E85C8236C48EF0040AFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85C6236C48EF0040AFF9 /* Main.storyboard */; };
-		976E85CA236C48F00040AFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976E85C9236C48F00040AFF9 /* Assets.xcassets */; };
-		976E85CD236C48F00040AFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85CB236C48F00040AFF9 /* LaunchScreen.storyboard */; };
-		976E85F9236C5DED0040AFF9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 976E85F8236C5DED0040AFF9 /* art.scnassets */; };
+		976E85E1236C59AD0040AFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85E0236C59AD0040AFF9 /* AppDelegate.swift */; };
+		976E85E3236C59AD0040AFF9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 976E85E2236C59AD0040AFF9 /* art.scnassets */; };
+		976E85E5236C59AD0040AFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85E4236C59AD0040AFF9 /* ViewController.swift */; };
+		976E85E8236C59AD0040AFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85E6236C59AD0040AFF9 /* Main.storyboard */; };
+		976E85EA236C59AE0040AFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976E85E9236C59AE0040AFF9 /* Assets.xcassets */; };
+		976E85ED236C59AE0040AFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85EB236C59AE0040AFF9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		976E85BF236C48EF0040AFF9 /* arbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		976E85C2236C48EF0040AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		976E85C4236C48EF0040AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		976E85C7236C48EF0040AFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		976E85C9236C48F00040AFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		976E85CC236C48F00040AFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		976E85CE236C48F00040AFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		976E85F8236C5DED0040AFF9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		976E85DD236C59AD0040AFF9 /* artest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = artest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		976E85E0236C59AD0040AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		976E85E2236C59AD0040AFF9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		976E85E4236C59AD0040AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		976E85E7236C59AD0040AFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		976E85E9236C59AE0040AFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		976E85EC236C59AE0040AFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		976E85EE236C59AE0040AFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		976E85BC236C48EF0040AFF9 /* Frameworks */ = {
+		976E85DA236C59AD0040AFF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		976E85B6236C48EF0040AFF9 = {
+		976E85D4236C59AD0040AFF9 = {
 			isa = PBXGroup;
 			children = (
-				976E85C1236C48EF0040AFF9 /* arbooks */,
-				976E85C0236C48EF0040AFF9 /* Products */,
+				976E85DF236C59AD0040AFF9 /* artest */,
+				976E85DE236C59AD0040AFF9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		976E85C0236C48EF0040AFF9 /* Products */ = {
+		976E85DE236C59AD0040AFF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				976E85BF236C48EF0040AFF9 /* arbooks.app */,
+				976E85DD236C59AD0040AFF9 /* artest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		976E85C1236C48EF0040AFF9 /* arbooks */ = {
+		976E85DF236C59AD0040AFF9 /* artest */ = {
 			isa = PBXGroup;
 			children = (
-				976E85F8236C5DED0040AFF9 /* art.scnassets */,
-				976E85C2236C48EF0040AFF9 /* AppDelegate.swift */,
-				976E85C4236C48EF0040AFF9 /* ViewController.swift */,
-				976E85C6236C48EF0040AFF9 /* Main.storyboard */,
-				976E85C9236C48F00040AFF9 /* Assets.xcassets */,
-				976E85CB236C48F00040AFF9 /* LaunchScreen.storyboard */,
-				976E85CE236C48F00040AFF9 /* Info.plist */,
+				976E85E0236C59AD0040AFF9 /* AppDelegate.swift */,
+				976E85E2236C59AD0040AFF9 /* art.scnassets */,
+				976E85E4236C59AD0040AFF9 /* ViewController.swift */,
+				976E85E6236C59AD0040AFF9 /* Main.storyboard */,
+				976E85E9236C59AE0040AFF9 /* Assets.xcassets */,
+				976E85EB236C59AE0040AFF9 /* LaunchScreen.storyboard */,
+				976E85EE236C59AE0040AFF9 /* Info.plist */,
 			);
-			path = arbooks;
+			path = artest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		976E85BE236C48EF0040AFF9 /* arbooks */ = {
+		976E85DC236C59AD0040AFF9 /* artest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 976E85D1236C48F00040AFF9 /* Build configuration list for PBXNativeTarget "arbooks" */;
+			buildConfigurationList = 976E85F1236C59AE0040AFF9 /* Build configuration list for PBXNativeTarget "artest" */;
 			buildPhases = (
-				976E85BB236C48EF0040AFF9 /* Sources */,
-				976E85BC236C48EF0040AFF9 /* Frameworks */,
-				976E85BD236C48EF0040AFF9 /* Resources */,
+				976E85D9236C59AD0040AFF9 /* Sources */,
+				976E85DA236C59AD0040AFF9 /* Frameworks */,
+				976E85DB236C59AD0040AFF9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = arbooks;
-			productName = arbooks;
-			productReference = 976E85BF236C48EF0040AFF9 /* arbooks.app */;
+			name = artest;
+			productName = artest;
+			productReference = 976E85DD236C59AD0040AFF9 /* artest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		976E85B7236C48EF0040AFF9 /* Project object */ = {
+		976E85D5236C59AD0040AFF9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Rasmus Stamm";
 				TargetAttributes = {
-					976E85BE236C48EF0040AFF9 = {
+					976E85DC236C59AD0040AFF9 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 976E85BA236C48EF0040AFF9 /* Build configuration list for PBXProject "arbooks" */;
+			buildConfigurationList = 976E85D8236C59AD0040AFF9 /* Build configuration list for PBXProject "artest" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 976E85B6236C48EF0040AFF9;
-			productRefGroup = 976E85C0236C48EF0040AFF9 /* Products */;
+			mainGroup = 976E85D4236C59AD0040AFF9;
+			productRefGroup = 976E85DE236C59AD0040AFF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				976E85BE236C48EF0040AFF9 /* arbooks */,
+				976E85DC236C59AD0040AFF9 /* artest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		976E85BD236C48EF0040AFF9 /* Resources */ = {
+		976E85DB236C59AD0040AFF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				976E85CD236C48F00040AFF9 /* LaunchScreen.storyboard in Resources */,
-				976E85F9236C5DED0040AFF9 /* art.scnassets in Resources */,
-				976E85CA236C48F00040AFF9 /* Assets.xcassets in Resources */,
-				976E85C8236C48EF0040AFF9 /* Main.storyboard in Resources */,
+				976E85E3236C59AD0040AFF9 /* art.scnassets in Resources */,
+				976E85ED236C59AE0040AFF9 /* LaunchScreen.storyboard in Resources */,
+				976E85EA236C59AE0040AFF9 /* Assets.xcassets in Resources */,
+				976E85E8236C59AD0040AFF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		976E85BB236C48EF0040AFF9 /* Sources */ = {
+		976E85D9236C59AD0040AFF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				976E85C5236C48EF0040AFF9 /* ViewController.swift in Sources */,
-				976E85C3236C48EF0040AFF9 /* AppDelegate.swift in Sources */,
+				976E85E5236C59AD0040AFF9 /* ViewController.swift in Sources */,
+				976E85E1236C59AD0040AFF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		976E85C6236C48EF0040AFF9 /* Main.storyboard */ = {
+		976E85E6236C59AD0040AFF9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				976E85C7236C48EF0040AFF9 /* Base */,
+				976E85E7236C59AD0040AFF9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		976E85CB236C48F00040AFF9 /* LaunchScreen.storyboard */ = {
+		976E85EB236C59AE0040AFF9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				976E85CC236C48F00040AFF9 /* Base */,
+				976E85EC236C59AE0040AFF9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		976E85CF236C48F00040AFF9 /* Debug */ = {
+		976E85EF236C59AE0040AFF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		976E85D0236C48F00040AFF9 /* Release */ = {
+		976E85F0236C59AE0040AFF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,34 +282,34 @@
 			};
 			name = Release;
 		};
-		976E85D2236C48F00040AFF9 /* Debug */ = {
+		976E85F2236C59AE0040AFF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = arbooks/Info.plist;
+				INFOPLIST_FILE = artest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SDU.arbooks;
+				PRODUCT_BUNDLE_IDENTIFIER = SDU.artest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		976E85D3236C48F00040AFF9 /* Release */ = {
+		976E85F3236C59AE0040AFF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = arbooks/Info.plist;
+				INFOPLIST_FILE = artest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SDU.arbooks;
+				PRODUCT_BUNDLE_IDENTIFIER = SDU.artest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		976E85BA236C48EF0040AFF9 /* Build configuration list for PBXProject "arbooks" */ = {
+		976E85D8236C59AD0040AFF9 /* Build configuration list for PBXProject "artest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				976E85CF236C48F00040AFF9 /* Debug */,
-				976E85D0236C48F00040AFF9 /* Release */,
+				976E85EF236C59AE0040AFF9 /* Debug */,
+				976E85F0236C59AE0040AFF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		976E85D1236C48F00040AFF9 /* Build configuration list for PBXNativeTarget "arbooks" */ = {
+		976E85F1236C59AE0040AFF9 /* Build configuration list for PBXNativeTarget "artest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				976E85D2236C48F00040AFF9 /* Debug */,
-				976E85D3236C48F00040AFF9 /* Release */,
+				976E85F2236C59AE0040AFF9 /* Debug */,
+				976E85F3236C59AE0040AFF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 976E85B7236C48EF0040AFF9 /* Project object */;
+	rootObject = 976E85D5236C59AD0040AFF9 /* Project object */;
 }

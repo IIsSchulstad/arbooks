@@ -11,7 +11,7 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-    
+
     @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -24,12 +24,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/MainScene.scn")!
+        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
         // Set the scene to the view
         sceneView.scene = scene
-        let testNode = scene.rootNode.childNode(withName: "TestNode", recursively: false)
-        testNode?.position = SCNVector3(0, -5, -5)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +35,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-        
+
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -48,17 +46,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
-    
+
     // MARK: - ARSCNViewDelegate
     
-    /*
-     // Override to create and configure nodes for anchors added to the view's session.
-     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-     let node = SCNNode()
+/*
+    // Override to create and configure nodes for anchors added to the view's session.
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        let node = SCNNode()
      
-     return node
-     }
-     */
+        return node
+    }
+*/
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user

@@ -45,6 +45,7 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="UNk-i0-tFs" firstAttribute="centerY" secondItem="XXD-DK-QV7" secondAttribute="centerY" id="FMh-Lc-H2T"/>
                                                 <constraint firstAttribute="trailing" secondItem="UNk-i0-tFs" secondAttribute="trailing" constant="18" id="H62-tP-qY9"/>
                                                 <constraint firstItem="UNk-i0-tFs" firstAttribute="centerY" secondItem="XXD-DK-QV7" secondAttribute="centerY" id="YxL-Qc-5dK"/>
                                                 <constraint firstItem="d1t-Ug-VGH" firstAttribute="centerY" secondItem="XXD-DK-QV7" secondAttribute="centerY" id="pXJ-hi-vR1"/>
@@ -65,12 +66,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0cc-Rs-ec9">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0cc-Rs-ec9">
                                                     <rect key="frame" x="347" y="7" width="49" height="31"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="NzI-75-X3y" secondAttribute="trailing" constant="336" id="IEc-zG-Y2u"/>
+                                                <constraint firstItem="0cc-Rs-ec9" firstAttribute="centerY" secondItem="Y9u-6z-7N1" secondAttribute="centerY" id="LvK-cy-IFh"/>
                                                 <constraint firstAttribute="trailing" secondItem="0cc-Rs-ec9" secondAttribute="trailing" constant="20" id="XLO-1T-hZX"/>
                                             </constraints>
                                         </tableViewCellContentView>

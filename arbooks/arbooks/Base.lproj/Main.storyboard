@@ -158,7 +158,18 @@
                     <view key="view" contentMode="scaleToFill" id="i62-Z5-EUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-9a-mTC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </arscnView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9z5-9a-mTC" firstAttribute="leading" secondItem="eFL-DZ-y06" secondAttribute="leading" id="2xs-ss-GOf"/>
+                            <constraint firstItem="9z5-9a-mTC" firstAttribute="top" secondItem="eFL-DZ-y06" secondAttribute="top" id="HML-kM-EoF"/>
+                            <constraint firstItem="eFL-DZ-y06" firstAttribute="bottom" secondItem="9z5-9a-mTC" secondAttribute="bottom" id="oq7-Zm-lex"/>
+                            <constraint firstItem="eFL-DZ-y06" firstAttribute="trailing" secondItem="9z5-9a-mTC" secondAttribute="trailing" id="qbo-pu-EZV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eFL-DZ-y06"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AR" id="l9s-H3-hyi"/>

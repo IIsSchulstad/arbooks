@@ -45,6 +45,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
            if let ID = reference.name, let book = bookList.books[ID] {
                DispatchQueue.main.async {
                 let alert = UIAlertController(title: book.title, message: "Author is \(book.author).\nPublished in \(book.yearPublished).", preferredStyle: .alert);
+                if let url = URL(string: book.videoURL) {
+                UIApplication.shared.openURL(url);
+                }
+                
                 alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil));
                 self.present(alert, animated: true, completion: nil);
                }

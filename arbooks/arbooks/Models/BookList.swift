@@ -12,7 +12,7 @@ class BookList {
     var books = [String: Book]();
     
     init() {
-        books["TestBook"] = Book(title: "Test Book", author: "Test Author", yearPublished: 1999);
+        books["TestBook"] = Book(title: "Test Book", author: "Test Author", yearPublished: 1999, videoURL: "https://www.youtube.com/watch?v=C0DPdy98e4c");
         
     }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28090812237B265600321AB1 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28090811237B265500321AB1 /* BookList.swift */; };
 		28090814237B266B00321AB1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28090813237B266B00321AB1 /* Book.swift */; };
+		2809081A237C7FEE00321AB1 /* ARModel.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 28090819237C7FEE00321AB1 /* ARModel.scnassets */; };
 		976E85C3236C48EF0040AFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85C2236C48EF0040AFF9 /* AppDelegate.swift */; };
 		976E85C5236C48EF0040AFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85C4236C48EF0040AFF9 /* ViewController.swift */; };
 		976E85C8236C48EF0040AFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85C6236C48EF0040AFF9 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		28090811237B265500321AB1 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		28090813237B266B00321AB1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		28090819237C7FEE00321AB1 /* ARModel.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = ARModel.scnassets; sourceTree = "<group>"; };
 		976E85BF236C48EF0040AFF9 /* arbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976E85C2236C48EF0040AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		976E85C4236C48EF0040AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 				976E85C2236C48EF0040AFF9 /* AppDelegate.swift */,
 				976E85C9236C48F00040AFF9 /* Assets.xcassets */,
 				976E85CB236C48F00040AFF9 /* LaunchScreen.storyboard */,
+				28090819237C7FEE00321AB1 /* ARModel.scnassets */,
 			);
 			path = "Other Files";
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				976E85CD236C48F00040AFF9 /* LaunchScreen.storyboard in Resources */,
 				976E85CA236C48F00040AFF9 /* Assets.xcassets in Resources */,
+				2809081A237C7FEE00321AB1 /* ARModel.scnassets in Resources */,
 				976E85C8236C48EF0040AFF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

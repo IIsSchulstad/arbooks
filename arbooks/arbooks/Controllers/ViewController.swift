@@ -13,13 +13,13 @@ import ARKit;
 class ARViewController: UIViewController, ARSCNViewDelegate {
    
     @IBOutlet weak var sceneView: ARSCNView!
-    private var bookList: BookList!
+    //private var bookList: BookList!
     
     override func viewDidLoad() {
         super.viewDidLoad();
         
         sceneView.delegate = self;
-        bookList = BookList();
+        //bookList = BookList();
     }
     
     override func viewWillAppear(_ animated: Bool) {

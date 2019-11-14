@@ -34,7 +34,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNk-i0-tFs">
-                                                    <rect key="frame" x="345" y="6.5" width="51" height="31"/>
+                                                    <rect key="frame" x="531" y="6.5" width="51" height="31"/>
                                                     <color key="onTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
                                             </subviews>
@@ -154,12 +154,12 @@
         <!--Cam-->
         <scene sceneID="BPv-QB-vOO">
             <objects>
-                <viewController title="Cam" id="38g-7l-yda" customClass="ViewController" customModule="arbooks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Cam" id="38g-7l-yda" customClass="ARViewController" customModule="arbooks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i62-Z5-EUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-9a-mTC">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="sceneView" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-9a-mTC">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </arscnView>
                         </subviews>
@@ -174,27 +174,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="AR" id="l9s-H3-hyi"/>
                     <connections>
-                        <outlet property="sceneView" destination="9z5-9a-mTC" id="qAl-U6-l18"/>
+                        <outlet property="sceneView" destination="9z5-9a-mTC" id="105-v4-PsX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXr-ql-W1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1396" y="177"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pbq-hy-559">
-            <objects>
-                <viewController id="n1d-BN-6em" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uVz-Tt-eQY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="096-Em-eXo"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="93r-aD-a2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1396" y="865"/>
         </scene>
         <!--Books-->
         <scene sceneID="J4Y-pp-7nJ">

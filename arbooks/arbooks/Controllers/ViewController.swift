@@ -10,50 +10,65 @@ import UIKit;
 import SceneKit;
 import ARKit;
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ARViewController: UIViewController, ARSCNViewDelegate {
    
-    @IBOutlet var sceneView: ARSCNView!
-    private var config = ARWorldTrackingConfiguration();
+    @IBOutlet weak var sceneView: ARSCNView!
     private var bookList: BookList!
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated);
-        config.planeDetection = .horizontal;
-        config.detectionImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil);
-        
-        sceneView.scene = SCNScene();
-        sceneView.delegate = self;
-        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints];
-        sceneView.session.run(config);
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad();
+        
+        sceneView.delegate = self;
         bookList = BookList();
     }
     
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if let imageAnchor = anchor as? ARImageAnchor {
-            print("Found image");
-            handleBookDetected(node: node, imageAnchor: imageAnchor);
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        let config = ARImageTrackingConfiguration();
+        if let trackedImages = ARReferenceImage.referenceImages(inGroupNamed: "ARResources", bundle: Bundle.main){
+            config.trackingImages = trackedImages;
+            config.maximumNumberOfTrackedImages = 1;
+        } else {
+            print("cant find image");
         }
+        
+        sceneView.session.run(config);
     }
     
-    private func handleBookDetected(node: SCNNode, imageAnchor: ARImageAnchor) {
-        let reference = imageAnchor.referenceImage;
-
-           if let ID = reference.name, let book = bookList.books[ID] {
-               DispatchQueue.main.async {
-                let alert = UIAlertController(title: book.title, message: "Author is \(book.author).\nPublished in \(book.yearPublished).", preferredStyle: .alert);
-                if let url = URL(string: book.videoURL) {
-                UIApplication.shared.openURL(url);
-                }
-                
-                alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil));
-                self.present(alert, animated: true, completion: nil);
-               }
-           }
-       }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated);
+        sceneView.session.pause();
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        print("render")
+        guard let imageAnchor = anchor as? ARImageAnchor, let videoURL = Bundle.main.path(forResource: "testVideo", ofType: "mp4") else {
+            print("no video found")
+            return}
+        
+        let videoToPlay = AVPlayerItem(url: URL(fileURLWithPath: videoURL));
+        let player = AVPlayer(playerItem: videoToPlay);
+        let videoNode = SKVideoNode(avPlayer: player);
+        player.play();
+        
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil) { (notification) in
+            player.seek(to: CMTime.zero)
+            player.play()
+            print("Looping Video")
+        }
+        
+        let videoScene = SKScene(size: CGSize(width: 480, height: 360));
+        
+        videoNode.position = CGPoint(x: videoScene.size.width / 2, y: videoScene.size.height / 2);
+        videoNode.yScale = -1.0;
+        videoScene.addChild(videoNode);
+        
+        let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height);
+        plane.firstMaterial?.diffuse.contents = videoScene;
+        let planeNode = SCNNode(geometry: plane);
+        planeNode.eulerAngles.x = -Float.pi / 2;
+        node.addChildNode(planeNode);
+    }
     
 
 

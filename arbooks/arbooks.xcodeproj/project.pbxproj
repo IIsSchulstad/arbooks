@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28090823237D8C3D00321AB1 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28090822237D8C3D00321AB1 /* testVideo.mp4 */; };
+		28090824237ECC1D00321AB1 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 97E57DE0237DC3CB00D91D3E /* testVideo.mp4 */; };
 		976E85C3236C48EF0040AFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85C2236C48EF0040AFF9 /* AppDelegate.swift */; };
 		976E85C5236C48EF0040AFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E85C4236C48EF0040AFF9 /* ViewController.swift */; };
 		976E85C8236C48EF0040AFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85C6236C48EF0040AFF9 /* Main.storyboard */; };
@@ -20,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28090822237D8C3D00321AB1 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testVideo.mp4; path = ../../../../Downloads/testVideo.mp4; sourceTree = "<group>"; };
 		976E85BF236C48EF0040AFF9 /* arbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976E85C2236C48EF0040AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		976E85C4236C48EF0040AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +27,7 @@
 		976E85C9236C48F00040AFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		976E85CC236C48F00040AFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		976E85CE236C48F00040AFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97E57DE0237DC3CB00D91D3E /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = SOURCE_ROOT; };
+		97E57DE0237DC3CB00D91D3E /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testVideo.mp4; path = arbooks/Controllers/testVideo.mp4; sourceTree = SOURCE_ROOT; };
 		97E57DE5237DC4EB00D91D3E /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		97E57DE7237DC5E900D91D3E /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		97E57DFD237DCD7400D91D3E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		976E85B6236C48EF0040AFF9 = {
 			isa = PBXGroup;
 			children = (
-				28090822237D8C3D00321AB1 /* testVideo.mp4 */,
 				28090815237B296D00321AB1 /* Other Files */,
 				976E85C1236C48EF0040AFF9 /* arbooks */,
 				976E85C0236C48EF0040AFF9 /* Products */,
@@ -174,7 +172,7 @@
 				976E85CD236C48F00040AFF9 /* LaunchScreen.storyboard in Resources */,
 				976E85CA236C48F00040AFF9 /* Assets.xcassets in Resources */,
 				976E85C8236C48EF0040AFF9 /* Main.storyboard in Resources */,
-				28090823237D8C3D00321AB1 /* testVideo.mp4 in Resources */,
+				28090824237ECC1D00321AB1 /* testVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

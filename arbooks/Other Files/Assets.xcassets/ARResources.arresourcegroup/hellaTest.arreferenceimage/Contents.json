@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "testImage.jpg"
+      "filename" : "hellaTest.jpg"
     }
   ],
   "info" : {
@@ -10,7 +10,7 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 21,
+    "width" : 14,
     "unit" : "centimeters"
   }
 }

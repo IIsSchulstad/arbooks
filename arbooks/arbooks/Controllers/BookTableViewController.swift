@@ -11,6 +11,7 @@ import UIKit
 class BookTableViewController: UITableViewController, UISearchBarDelegate {
     let searchBar = UISearchBar()
     var books = [Book]()
+    var selectedBook: Book?
 
     //Search variables
     var filteredArray = [Book]()
@@ -56,6 +57,16 @@ class BookTableViewController: UITableViewController, UISearchBarDelegate {
         } else {
             return books.count
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(showSearchResults == true) {
+            selectedBook = filteredArray[indexPath.row]
+        }
+        else {
+            selectedBook = books[indexPath.row]
+        }
+        self.performSegue(withIdentifier: "ARSegue", sender: self)
     }
 
     
@@ -132,11 +143,16 @@ class BookTableViewController: UITableViewController, UISearchBarDelegate {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    */
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "ARSegue"){
+            let ARVC = segue.destination as! ARViewController
+            ARVC.testBook = selectedBook
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
     
     private func loadSampleBooks(){
         let cover1 = UIImage(named: "book1")

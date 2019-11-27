@@ -11,13 +11,15 @@ import SceneKit;
 import ARKit;
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
-   
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var testBook: Book?
     @IBOutlet weak var sceneView: ARSCNView!
     //private var bookList: BookList!
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        
+        imageView.image = testBook?.cover
         sceneView.delegate = self;
         //bookList = BookList();
     }

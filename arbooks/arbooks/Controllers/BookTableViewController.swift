@@ -159,15 +159,15 @@ class BookTableViewController: UITableViewController, UISearchBarDelegate {
         let cover2 = UIImage(named: "book2")
         let cover3 = UIImage(named: "book3")
         
-        guard let book1 = Book(title: "Harry Potter", cover: cover1, author: "J. K. Rowling", edition: 5, yearPublished: 2010, videoURL: "www.google.com") else {
+        guard let book1 = Book(title: "Harry Potter", cover: cover1, author: "J. K. Rowling", edition: 5, yearPublished: 2010, videoURL: "www.google.com", resource: "HarryPotterResources") else {
             fatalError("Unable to instantiate book1")
         }
         
-        guard let book2 = Book(title: "Den Lille Havfrue", cover: cover2, author: "H. C. Andersen", edition: 2, yearPublished: 2010, videoURL: "www.google.com") else {
+        guard let book2 = Book(title: "Den Lille Havfrue", cover: cover2, author: "H. C. Andersen", edition: 2, yearPublished: 2010, videoURL: "www.google.com", resource: "DenLilleHavfrueResources") else {
             fatalError("Unable to instantiate book2")
         }
         
-        guard let book3 = Book(title: "Test Book", cover: cover3, author: "T. E. St", edition: 11, yearPublished: 2010, videoURL: "www.google.com") else {
+        guard let book3 = Book(title: "Test Book", cover: cover3, author: "T. E. St", edition: 11, yearPublished: 2010, videoURL: "www.google.com", resource: "TestBookResources") else {
             fatalError("Unable to instantiate book3")
         }
         

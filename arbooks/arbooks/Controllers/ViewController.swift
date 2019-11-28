@@ -11,13 +11,15 @@ import SceneKit;
 import ARKit;
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
-   
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var testBook: Book?
     @IBOutlet weak var sceneView: ARSCNView!
     //private var bookList: BookList!
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        
+        imageView.image = testBook?.cover
         sceneView.delegate = self;
         //bookList = BookList();
     }
@@ -25,7 +27,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         let config = ARImageTrackingConfiguration();
-        if let trackedImages = ARReferenceImage.referenceImages(inGroupNamed: "ARResources", bundle: Bundle.main){
+        if let trackedImages = ARReferenceImage.referenceImages(inGroupNamed: testBook!.resource, bundle: Bundle.main){
             config.trackingImages = trackedImages;
             config.maximumNumberOfTrackedImages = 1;
         } else {
@@ -42,10 +44,12 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         print("render")
-        guard let imageAnchor = anchor as? ARImageAnchor, let videoURL = Bundle.main.path(forResource: "testVideo", ofType: "mp4") else {
+        guard let imageAnchor = anchor as? ARImageAnchor, let videoURL = Bundle.main.path(forResource: (imageAnchor.name ?? "no name"), ofType: "mp4") else {
             print("no video found")
-            return}
-        
+            return
+        }
+        print(testBook?.title)
+        print(imageAnchor.name ?? "no name found")
         let videoToPlay = AVPlayerItem(url: URL(fileURLWithPath: videoURL));
         let player = AVPlayer(playerItem: videoToPlay);
         let videoNode = SKVideoNode(avPlayer: player);

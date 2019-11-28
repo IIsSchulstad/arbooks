@@ -20,6 +20,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad();
         imageView.image = testBook?.cover
+        self.navigationItem.title = testBook?.title
         sceneView.delegate = self;
         //bookList = BookList();
     }

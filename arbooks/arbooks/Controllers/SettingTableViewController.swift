@@ -9,16 +9,55 @@
 import UIKit
 
 class SettingTableViewController: UITableViewController {
-
+    @IBOutlet var settingsTable: UITableView!
+    var howToUse: Info?
+    var faq: Info?
+    var terms: Info?
+    var selectedInfo: Info?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        createInfo()
         createDoneButton()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            print("you pressed a setting!")
+            
+        case 1:
+            
+            switch indexPath.row {
+            case 0:
+                selectedInfo = howToUse
+            case 1:
+                selectedInfo = faq
+            case 2:
+                selectedInfo = terms
+                
+            default:
+                selectedInfo = nil
+            }
+            
+            self.performSegue(withIdentifier: "InfoSegue", sender: self)
+            
+        default:
+            print("you pressed nothing!")
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "InfoSegue"){
+            let InfoVC = segue.destination as! InfoViewController
+            InfoVC.info = selectedInfo
+        }
     }
     
     func createDoneButton(){
@@ -97,5 +136,29 @@ class SettingTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    private func createInfo() {
+        var textArray = [String]()
+        var imageArray = [UIImage?]()
+        
+        textArray.append("Who the fuck even knows at this point omegalul")
+        imageArray.append(UIImage(named: "howToUse"))
+        howToUse = Info(title: "How to use", textArray: textArray, imageArray: imageArray)
+        
+        textArray.removeAll()
+        imageArray.removeAll()
+        
+        textArray.append("Q1: Is this app any good? \nA1: Yes")
+        textArray.append("Q2: Did this app turn out like we hoped? \nA2: No, not quite...")
+        faq = Info(title: "FAQ", textArray: textArray, imageArray: imageArray)
+        
+        textArray.removeAll()
+        imageArray.removeAll()
+        
+        textArray.append("We own you now")
+        
+        terms = Info(title: "Terms and conditions", textArray: textArray, imageArray: imageArray)
+        
+    }
 
 }

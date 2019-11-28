@@ -21,8 +21,19 @@ class BookTableViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        createSettingsButton()
         createSearchBar()
         loadSampleBooks()
+    }
+    
+    func createSettingsButton(){
+        let settingsButton = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingsClicked))
+        
+        self.navigationItem.leftBarButtonItem = settingsButton
+    }
+    
+    @objc func settingsClicked() {
+        self.performSegue(withIdentifier: "SettingsSegue", sender: self)
     }
     
     func createSearchBar(){

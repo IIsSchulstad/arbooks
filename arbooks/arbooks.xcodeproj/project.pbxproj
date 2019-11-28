@@ -16,6 +16,9 @@
 		976E85CD236C48F00040AFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85CB236C48F00040AFF9 /* LaunchScreen.storyboard */; };
 		97CEA0FC238E97BD000A3374 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA0FB238E97BD000A3374 /* BookTableViewCell.swift */; };
 		97CEA0FE238E985D000A3374 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA0FD238E985D000A3374 /* SettingTableViewController.swift */; };
+		97CEA100238F9747000A3374 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA0FF238F9747000A3374 /* InfoViewController.swift */; };
+		97CEA106238F9B4E000A3374 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA105238F9B4E000A3374 /* Info.swift */; };
+		97CEA108238FBD94000A3374 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA107238FBD94000A3374 /* InfoTableViewCell.swift */; };
 		97E57DE8237DC5E900D91D3E /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E57DE7237DC5E900D91D3E /* BookTableViewController.swift */; };
 		97E57DFE237DCD7400D91D3E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E57DFD237DCD7400D91D3E /* Book.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,9 @@
 		976E85CE236C48F00040AFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97CEA0FB238E97BD000A3374 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		97CEA0FD238E985D000A3374 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		97CEA0FF238F9747000A3374 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		97CEA105238F9B4E000A3374 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		97CEA107238FBD94000A3374 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		97E57DE7237DC5E900D91D3E /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		97E57DFD237DCD7400D91D3E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +95,8 @@
 				976E85C4236C48EF0040AFF9 /* ViewController.swift */,
 				97E57DE7237DC5E900D91D3E /* BookTableViewController.swift */,
 				97CEA0FD238E985D000A3374 /* SettingTableViewController.swift */,
+				97CEA0FF238F9747000A3374 /* InfoViewController.swift */,
+				97CEA107238FBD94000A3374 /* InfoTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				97E57DFD237DCD7400D91D3E /* Book.swift */,
+				97CEA105238F9B4E000A3374 /* Info.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,8 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				97CEA0FE238E985D000A3374 /* SettingTableViewController.swift in Sources */,
+				97CEA106238F9B4E000A3374 /* Info.swift in Sources */,
 				97E57DFE237DCD7400D91D3E /* Book.swift in Sources */,
+				97CEA108238FBD94000A3374 /* InfoTableViewCell.swift in Sources */,
 				97E57DE8237DC5E900D91D3E /* BookTableViewController.swift in Sources */,
+				97CEA100238F9747000A3374 /* InfoViewController.swift in Sources */,
 				976E85C5236C48EF0040AFF9 /* ViewController.swift in Sources */,
 				97CEA0FC238E97BD000A3374 /* BookTableViewCell.swift in Sources */,
 				976E85C3236C48EF0040AFF9 /* AppDelegate.swift in Sources */,
@@ -363,13 +375,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PPSHSGW4ZF;
+				DEVELOPMENT_TEAM = MAZB3NTNLU;
 				INFOPLIST_FILE = arbooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = arbooks;
+				PRODUCT_BUNDLE_IDENTIFIER = arbooks1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,11 +1,3 @@
-//
-//  Info.swift
-//  arbooks
-//
-//  Created by Rasmus Stamm on 28/11/2019.
-//  Copyright © 2019 Rasmus Stamm. All rights reserved.
-//
-
 import UIKit
 
 class Info {

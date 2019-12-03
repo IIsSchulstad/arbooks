@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		284F127E238F0D5300099794 /* hellaTest.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = hellaTest.mp4; path = "Other Files/Harry Potter/hellaTest.mp4"; sourceTree = SOURCE_ROOT; };
 		284F1281238F0FEF00099794 /* managingAcrossCultures.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = managingAcrossCultures.mp4; path = ../../../../../../Downloads/managingAcrossCultures.mp4; sourceTree = "<group>"; };
-		976E85BF236C48EF0040AFF9 /* arbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		976E85BF236C48EF0040AFF9 /* ARBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976E85C2236C48EF0040AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		976E85C4236C48EF0040AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		976E85C7236C48EF0040AFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		976E85C0236C48EF0040AFF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				976E85BF236C48EF0040AFF9 /* arbooks.app */,
+				976E85BF236C48EF0040AFF9 /* ARBooks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 			);
 			name = arbooks;
 			productName = arbooks;
-			productReference = 976E85BF236C48EF0040AFF9 /* arbooks.app */;
+			productReference = 976E85BF236C48EF0040AFF9 /* ARBooks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -375,14 +375,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MAZB3NTNLU;
+				DEVELOPMENT_TEAM = PPSHSGW4ZF;
 				INFOPLIST_FILE = arbooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = arbooks1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = arbooks;
+				PRODUCT_NAME = ARBooks;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -400,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = arbooks;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ARBooks;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

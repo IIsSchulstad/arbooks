@@ -1,11 +1,3 @@
-//
-//  Book.swift
-//  arbooks
-//
-//  Created by Rasmus Stamm on 14/11/2019.
-//  Copyright © 2019 Rasmus Stamm. All rights reserved.
-//
-
 import UIKit
 
 class Book{

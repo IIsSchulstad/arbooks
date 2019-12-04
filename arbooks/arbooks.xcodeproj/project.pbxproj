@@ -16,6 +16,9 @@
 		976E85CD236C48F00040AFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976E85CB236C48F00040AFF9 /* LaunchScreen.storyboard */; };
 		97CEA0FC238E97BD000A3374 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA0FB238E97BD000A3374 /* BookTableViewCell.swift */; };
 		97CEA0FE238E985D000A3374 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA0FD238E985D000A3374 /* SettingTableViewController.swift */; };
+		97CEA100238F9747000A3374 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA0FF238F9747000A3374 /* InfoViewController.swift */; };
+		97CEA106238F9B4E000A3374 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA105238F9B4E000A3374 /* Info.swift */; };
+		97CEA108238FBD94000A3374 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEA107238FBD94000A3374 /* InfoTableViewCell.swift */; };
 		97E57DE8237DC5E900D91D3E /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E57DE7237DC5E900D91D3E /* BookTableViewController.swift */; };
 		97E57DFE237DCD7400D91D3E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E57DFD237DCD7400D91D3E /* Book.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +26,7 @@
 /* Begin PBXFileReference section */
 		284F127E238F0D5300099794 /* hellaTest.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = hellaTest.mp4; path = "Other Files/Harry Potter/hellaTest.mp4"; sourceTree = SOURCE_ROOT; };
 		284F1281238F0FEF00099794 /* managingAcrossCultures.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = managingAcrossCultures.mp4; path = ../../../../../../Downloads/managingAcrossCultures.mp4; sourceTree = "<group>"; };
-		976E85BF236C48EF0040AFF9 /* arbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		976E85BF236C48EF0040AFF9 /* ARBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976E85C2236C48EF0040AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		976E85C4236C48EF0040AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		976E85C7236C48EF0040AFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +35,9 @@
 		976E85CE236C48F00040AFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97CEA0FB238E97BD000A3374 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		97CEA0FD238E985D000A3374 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		97CEA0FF238F9747000A3374 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		97CEA105238F9B4E000A3374 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		97CEA107238FBD94000A3374 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		97E57DE7237DC5E900D91D3E /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		97E57DFD237DCD7400D91D3E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +95,8 @@
 				976E85C4236C48EF0040AFF9 /* ViewController.swift */,
 				97E57DE7237DC5E900D91D3E /* BookTableViewController.swift */,
 				97CEA0FD238E985D000A3374 /* SettingTableViewController.swift */,
+				97CEA0FF238F9747000A3374 /* InfoViewController.swift */,
+				97CEA107238FBD94000A3374 /* InfoTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				97E57DFD237DCD7400D91D3E /* Book.swift */,
+				97CEA105238F9B4E000A3374 /* Info.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,7 +131,7 @@
 		976E85C0236C48EF0040AFF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				976E85BF236C48EF0040AFF9 /* arbooks.app */,
+				976E85BF236C48EF0040AFF9 /* ARBooks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,7 +164,7 @@
 			);
 			name = arbooks;
 			productName = arbooks;
-			productReference = 976E85BF236C48EF0040AFF9 /* arbooks.app */;
+			productReference = 976E85BF236C48EF0040AFF9 /* ARBooks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,8 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				97CEA0FE238E985D000A3374 /* SettingTableViewController.swift in Sources */,
+				97CEA106238F9B4E000A3374 /* Info.swift in Sources */,
 				97E57DFE237DCD7400D91D3E /* Book.swift in Sources */,
+				97CEA108238FBD94000A3374 /* InfoTableViewCell.swift in Sources */,
 				97E57DE8237DC5E900D91D3E /* BookTableViewController.swift in Sources */,
+				97CEA100238F9747000A3374 /* InfoViewController.swift in Sources */,
 				976E85C5236C48EF0040AFF9 /* ViewController.swift in Sources */,
 				97CEA0FC238E97BD000A3374 /* BookTableViewCell.swift in Sources */,
 				976E85C3236C48EF0040AFF9 /* AppDelegate.swift in Sources */,
@@ -370,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = arbooks;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ARBooks;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = arbooks;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ARBooks;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
